@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Puppy Application | Westwind Labradors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="multi.css">
+</head>
+<body class="inner-page">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" data-site-header></header>
+  <main id="main">
+    <section class="page-hero">
+      <h1>Tell us about your home.</h1>
+      <p>Submitting an application does not guarantee puppy availability.</p>
+    </section>
+    <section class="application-section">
+      <div class="form-intro">
+        <h2>We look forward to getting to know you.</h2>
+        <p>Applications help us understand prospective homes and the Labrador you are looking for.</p>
+        <p class="required-key"><span aria-hidden="true">*</span> Required field</p>
+      </div>
+      <form id="puppy-application">
+        <div class="form-status" aria-live="polite" tabindex="-1"></div>
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <div class="field-grid">
+            <label>Full name <b aria-hidden="true">*</b><input name="fullName" required></label>
+            <label>Email <b aria-hidden="true">*</b><input name="email" type="email" required></label>
+            <label>Phone <b aria-hidden="true">*</b><input name="phone" type="tel" required></label>
+            <label>City <b aria-hidden="true">*</b><input name="city" required></label>
+            <label>State <b aria-hidden="true">*</b><input name="state" required></label>
+            <label>ZIP <b aria-hidden="true">*</b><input name="zip" required></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Current Pets</legend>
+          <div class="field-grid">
+            <label>Do you currently own pets?<select name="hasPets"><option>Please select</option><option>Yes</option><option>No</option></select></label>
+          </div>
+          <label>Current pets (type, breed, age, and sex)<textarea name="pets" rows="3"></textarea></label>
+        </fieldset>
+        <fieldset>
+          <legend>Home &amp; Lifestyle</legend>
+          <div class="field-grid">
+            <label>Is your yard fenced?<select name="fencedYard"><option>Please select</option><option>Yes</option><option>No</option></select></label>
+          </div>
+          <label>Exercise opportunities<textarea name="activities" rows="3"></textarea></label>
+        </fieldset>
+        <fieldset>
+          <legend>Puppy preferences &amp; veterinary care</legend>
+          <div class="field-grid">
+            <label>Preferred sex<select name="preferredSex"><option>No preference</option><option>Female</option><option>Male</option></select></label>
+            <label>Preferred color<select name="preferredColor"><option>No preference</option><option>Yellow</option><option>Black</option><option>Chocolate</option></select></label>
+            <label>Primary interest<select name="purpose"><option>Family / companion</option><option>Hunting</option><option>Competition</option><option>Breeding</option><option>Other</option></select></label>
+            <label>Veterinarian name<input name="vetName"></label>
+            <label>Veterinarian contact information<input name="vetContact"></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>More About You</legend>
+          <label>What are you looking for in a Labrador? <b aria-hidden="true">*</b><textarea name="lookingFor" rows="4" required></textarea></label>
+          <label>Is there anything else you would like us to know?<textarea name="additional" rows="4"></textarea></label>
+        </fieldset>
+        <div class="trap" aria-hidden="true"><input name="website" tabindex="-1" autocomplete="off"></div>
+        <button class="button button-dark" type="submit">Submit Puppy Application</button>
+        <p class="form-note">Your information is used to review your application and is not placed in a public URL. See our <a href="privacy.html">privacy policy</a>.</p>
+      </form>
+    </section>
+  </main>
+  <footer data-site-footer></footer>
+  <script src="shared.js"></script>
+  <script src="application-form.js"></script>
+  <script src="multi.js"></script>
+</body>
+</html>
