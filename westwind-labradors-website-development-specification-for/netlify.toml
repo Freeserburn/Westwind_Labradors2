@@ -1,7 +1,3 @@
-[build]
-  publish = "."
-  functions = "netlify/functions"
-
 # Canonical domain: https://westwindlabradors.com
 # In Netlify, set the non-www domain as the site's primary production domain.
 # These one-way rules then send both www variants to the canonical domain.
